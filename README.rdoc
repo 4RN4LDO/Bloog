@@ -1,1 +1,1 @@
-Blog exercise based on the Object on Rails book.
+Blog created based on the Object on Rails book.
