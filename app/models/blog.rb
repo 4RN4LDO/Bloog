@@ -9,6 +9,16 @@ class Blog
     "Watching Paint Dry"
   end
 
+  def add_entry(entry)
+    entries << entry
+  end
+
+  def new_post(*args)
+    post_source.call(*args).tap do |p|
+      p.blog = self
+    end
+  end
+
   def subtitle
     "The trusted source for drying paint news & opinion"
   end
